@@ -52,12 +52,12 @@ Browse the [mechanisms/](mechanisms/) directory. Each file is self-contained. Co
 **Option 2: Install as a Claude Code plugin**
 
 ```bash
-# Coming soon -- plugin packaging in progress
+git clone https://github.com/christophecapel/claude-mechanisms.git ~/.claude/plugins/claude-mechanisms
 ```
 
 ## About
 
-Built by [Christophe Capel](https://github.com/christophecapel) -- a product leader who spent 7+ weeks building a personal operating system with Claude Code and codified the discipline that made it work.
+Built by [Christophe Capel](https://github.com/christophecapel) -- a product leader building a personal operating system with Claude Code and codifying the discipline that makes it work.
 
 These mechanisms emerged from real failures: wrong-branch commits, lost credentials, orphaned files, scope creep across parallel sessions, and rules that Claude forgot between conversations. Each one exists because something broke and I made sure it wouldn't break the same way twice.
 
