@@ -1,0 +1,6 @@
+{
+  "name": "claude-mechanisms",
+  "description": "15 mechanisms for Claude Code. Not rules. Not principles. Mechanisms with triggers and retry logic.",
+  "version": "1.0.0",
+  "author": "Christophe Capel"
+}

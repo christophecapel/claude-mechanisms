@@ -20,15 +20,13 @@ Then reference the mechanisms directory from your `CLAUDE.md`:
 See mechanisms/ for the full set of operating principles.
 ```
 
-## Option 3: Claude Code plugin (coming soon)
-
-Plugin packaging is in progress. Once available:
+## Option 3: Install as a Claude Code plugin
 
 ```bash
-claude plugin install claude-mechanisms
+git clone https://github.com/christophecapel/claude-mechanisms.git ~/.claude/plugins/claude-mechanisms
 ```
 
-This will make all 15 mechanisms available in every Claude Code session automatically.
+This installs all 15 mechanisms as a Claude Code plugin. They'll be available in every session automatically.
 
 ## Customization
 
