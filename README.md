@@ -1,10 +1,14 @@
 # claude-mechanisms
 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Mechanisms](https://img.shields.io/badge/Mechanisms-15-blue.svg)
+![Built for](https://img.shields.io/badge/Built%20for-Claude%20Code-orange.svg)
+
 > Mechanisms, not rules. Triggers, not intentions. Built for Claude Code.
 >
 > "Good intentions don't work. Mechanisms do." -- Jeff Bezos
 
-15 mechanisms codified from working with Claude Code every day for 7+ weeks. 833 GitHub contributions worth of trial and error, distilled into the operating principles that actually stuck.
+15 mechanisms codified from working with Claude Code every day. Distilled into the operating principles that actually stuck.
 
 Not rules (rules get forgotten between sessions). Not principles (too abstract to enforce). **Mechanisms** -- with triggers, retry logic, and failure notifications that fire whether you remember them or not.
 
