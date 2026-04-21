@@ -1,3 +1,5 @@
+![Banner Alt Text](banner-claude-mechanisms.png)
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Mechanisms](https://img.shields.io/badge/Mechanisms-16-blue.svg)
 ![Built for](https://img.shields.io/badge/Built%20for-Claude%20Code-orange.svg)
