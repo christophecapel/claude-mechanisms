@@ -1,4 +1,4 @@
-# Dry-run before data-patching scripts
+# Dry-run before committing data-patching scripts
 
 > Any script that modifies existing user-facing files must include a --dry-run mode. Run against real data before the first commit.
 

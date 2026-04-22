@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Mechanism #13 title aligned to myOS HWW source of truth. H1 and README link text updated from "Dry-run before data-patching [scripts]" to "Dry-run before committing data-patching scripts" (the word "committing" is a substantive qualifier, the dry-run happens before the first commit of the script, not every run). Filename kept unchanged (`mechanisms/13-dry-run-before-data-patching.md`) to preserve URL stability. `mechanisms.yaml` entry also updated. Detected by `~/myOS/scripts/check-hww-parity.py` phase 2 title-match check (CC-104).
+
+---
+
 ## v2.1 -- Graduate HWW #17-20; drop count anchors
 
 **Date:** 2026-04-22
