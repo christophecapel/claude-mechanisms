@@ -36,7 +36,7 @@ A mechanism has:
 | 10 | [Parity over independence](mechanisms/10-parity-over-independence.md) | Test that N things work the same, not just individually |
 | 11 | [One branch, one scope](mechanisms/11-one-branch-one-scope.md) | Branch frozen once PR is ready; verify scope before committing |
 | 12 | [Consolidate review in the artifact](mechanisms/12-consolidate-review-in-artifact.md) | Put proposed changes inside the file, not in chat |
-| 13 | [Dry-run before data-patching](mechanisms/13-dry-run-before-data-patching.md) | Test scripts against real data, not just synthetic tests |
+| 13 | [Dry-run before committing data-patching scripts](mechanisms/13-dry-run-before-data-patching.md) | Test scripts against real data, not just synthetic tests |
 | 14 | [Trace the cascade](mechanisms/14-trace-the-cascade.md) | Walk every downstream consumer before finalizing a pipeline change |
 | 15 | [Build callables, not embedded logic](mechanisms/15-build-callables-not-embedded-logic.md) | One script, multiple callers, same behaviour |
 | 16 | [Smallest shippable first](mechanisms/16-smallest-shippable-first.md) | Ship the smallest slice that validates the hypothesis |

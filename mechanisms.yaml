@@ -65,7 +65,7 @@ mechanisms:
     file: mechanisms/12-consolidate-review-in-artifact.md
     scope: review
   - id: 13
-    name: "Dry-run before data-patching"
+    name: "Dry-run before committing data-patching scripts"
     file: mechanisms/13-dry-run-before-data-patching.md
     scope: scripts
   - id: 14
