@@ -1,0 +1,98 @@
+# mechanisms.yaml
+#
+# Declarative manifest of every mechanism in this repo.
+# Source of truth: ~/myOS/CLAUDE.md "How We Work" section.
+#
+# This file is the ground truth for automated parity checks between the
+# private HWW section in myOS and the public mechanism catalog here.
+# A parity gate (see ~/myOS/scripts/check-hww-parity.py) asserts that
+# every HWW entry has a corresponding manifest entry and file.
+#
+# Supersedes the "Future prevention" section of CC-101.
+# Tracking ticket: CC-104.
+
+version: 1
+updated: 2026-04-22
+hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
+
+mechanisms:
+  - id: 1
+    name: "Discover and derive, never assume or ask"
+    file: mechanisms/01-discover-and-derive.md
+    scope: session-wide
+  - id: 2
+    name: "git mv, not cp + rm"
+    file: mechanisms/02-git-mv-not-cp-rm.md
+    scope: file-operations
+  - id: 3
+    name: "No orphaned files"
+    file: mechanisms/03-no-orphaned-files.md
+    scope: file-operations
+  - id: 4
+    name: "One focused thing per session"
+    file: mechanisms/04-one-focused-thing-per-session.md
+    scope: session-wide
+  - id: 5
+    name: "Deferred work needs persistent markers"
+    file: mechanisms/05-deferred-work-needs-persistent-markers.md
+    scope: session-wide
+  - id: 6
+    name: "Fix conflicts autonomously"
+    file: mechanisms/06-fix-conflicts-autonomously.md
+    scope: git-operations
+  - id: 7
+    name: "Build mechanisms, not habits"
+    file: mechanisms/07-build-mechanisms-not-habits.md
+    scope: meta
+  - id: 8
+    name: "Incremental rollout, not big-bang swap"
+    file: mechanisms/08-incremental-rollout-not-big-bang-swap.md
+    scope: integration
+  - id: 9
+    name: "Atomic credential persistence"
+    file: mechanisms/09-atomic-credential-persistence.md
+    scope: credentials
+  - id: 10
+    name: "Parity over independence"
+    file: mechanisms/10-parity-over-independence.md
+    scope: testing
+  - id: 11
+    name: "One branch, one scope"
+    file: mechanisms/11-one-branch-one-scope.md
+    scope: git-operations
+  - id: 12
+    name: "Consolidate review in the artifact"
+    file: mechanisms/12-consolidate-review-in-artifact.md
+    scope: review
+  - id: 13
+    name: "Dry-run before data-patching"
+    file: mechanisms/13-dry-run-before-data-patching.md
+    scope: scripts
+  - id: 14
+    name: "Trace the cascade"
+    file: mechanisms/14-trace-the-cascade.md
+    scope: planning
+  - id: 15
+    name: "Build callables, not embedded logic"
+    file: mechanisms/15-build-callables-not-embedded-logic.md
+    scope: scripts
+  - id: 16
+    name: "Smallest shippable first"
+    file: mechanisms/16-smallest-shippable-first.md
+    scope: planning
+  - id: 17
+    name: "Structural checks use hooks, not behavioral rules"
+    file: mechanisms/17-structural-checks-use-hooks.md
+    scope: meta
+  - id: 18
+    name: "Safest path first on destructive ops"
+    file: mechanisms/18-safest-path-first-destructive-ops.md
+    scope: destructive-ops
+  - id: 19
+    name: "Detection rules: more specific patterns, never broader allowlists"
+    file: mechanisms/19-detection-rules-specific-patterns.md
+    scope: detection
+  - id: 20
+    name: "Hooks silent on pass"
+    file: mechanisms/20-hooks-silent-on-pass.md
+    scope: hook-design
