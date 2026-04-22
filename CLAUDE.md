@@ -1,10 +1,10 @@
 # claude-mechanisms
 
-A public collection of 16 operating mechanisms for Claude Code. Each mechanism is a self-contained markdown file in `mechanisms/`.
+A public collection of operating mechanisms for Claude Code. Each mechanism is a self-contained markdown file in `mechanisms/`.
 
 ## Folder structure
 
-- `mechanisms/` -- one `.md` file per mechanism, numbered 01-16
+- `mechanisms/` -- one `.md` file per mechanism, numbered sequentially
 - `README.md` -- overview, table of contents, install instructions
 - `CHANGELOG.md` -- versioned changes with rationale
 - `install.md` -- detailed plugin installation guide

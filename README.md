@@ -1,12 +1,11 @@
 ![Banner Alt Text](banner-claude-mechanisms.png)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Mechanisms](https://img.shields.io/badge/Mechanisms-16-blue.svg)
 ![Built for](https://img.shields.io/badge/Built%20for-Claude%20Code-orange.svg)
 
 > "Good intentions don't work. Mechanisms do." -- Jeff Bezos
 
-16 mechanisms codified from working with Claude Code every day. Distilled into the operating principles that actually stuck.
+Operating mechanisms codified from working with Claude Code every day. Distilled into the ones that actually stuck.
 
 Not rules (rules get forgotten between sessions). Not principles (too abstract to enforce). **Mechanisms** -- with triggers, retry logic, and failure notifications that fire whether you remember them or not.
 
@@ -21,7 +20,7 @@ A mechanism has:
 - **Retry logic** (up to N attempts) when the outcome isn't met
 - A **failure notification** if retries are exhausted -- never fail silently
 
-## The 16 mechanisms
+## The mechanisms
 
 | # | Mechanism | One-liner |
 |---|---|---|
@@ -41,6 +40,10 @@ A mechanism has:
 | 14 | [Trace the cascade](mechanisms/14-trace-the-cascade.md) | Walk every downstream consumer before finalizing a pipeline change |
 | 15 | [Build callables, not embedded logic](mechanisms/15-build-callables-not-embedded-logic.md) | One script, multiple callers, same behaviour |
 | 16 | [Smallest shippable first](mechanisms/16-smallest-shippable-first.md) | Ship the smallest slice that validates the hypothesis |
+| 17 | [Structural checks use hooks, not behavioral rules](mechanisms/17-structural-checks-use-hooks.md) | Enforce objective checks with hooks; reserve rules for judgment calls |
+| 18 | [Safest path first on destructive ops](mechanisms/18-safest-path-first-destructive-ops.md) | Backup, replace, verify, parallel-run, confirm, then destroy |
+| 19 | [Detection rules: more specific patterns, never broader allowlists](mechanisms/19-detection-rules-specific-patterns.md) | When a detector misses, tighten the pattern, never loosen the allowlist |
+| 20 | [Hooks silent on pass](mechanisms/20-hooks-silent-on-pass.md) | Pass prints nothing; warn prints one line; block denies with full detail |
 
 ## Quick start
 
