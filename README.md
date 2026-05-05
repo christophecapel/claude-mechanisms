@@ -44,6 +44,7 @@ A mechanism has:
 | 18 | [Safest path first on destructive ops](mechanisms/18-safest-path-first-destructive-ops.md) | Backup, replace, verify, parallel-run, confirm, then destroy |
 | 19 | [Detection rules: more specific patterns, never broader allowlists](mechanisms/19-detection-rules-specific-patterns.md) | When a detector misses, tighten the pattern, never loosen the allowlist |
 | 20 | [Hooks silent on pass](mechanisms/20-hooks-silent-on-pass.md) | Pass prints nothing; warn prints one line; block denies with full detail |
+| 21 | [Structural intervention beats pattern N+1](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md) | After two rounds of patterns on the same detector, the third round is architectural |
 
 ## Quick start
 

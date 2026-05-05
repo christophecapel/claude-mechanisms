@@ -12,7 +12,7 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-04-22
+updated: 2026-05-05
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 
 mechanisms:
@@ -96,3 +96,7 @@ mechanisms:
     name: "Hooks silent on pass"
     file: mechanisms/20-hooks-silent-on-pass.md
     scope: hook-design
+  - id: 21
+    name: "Structural intervention beats pattern N+1"
+    file: mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md
+    scope: detection

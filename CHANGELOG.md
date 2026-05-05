@@ -2,6 +2,34 @@
 
 ## Unreleased
 
+(none — see v2.2 below)
+
+---
+
+## v2.2 -- Graduate HWW #21
+
+**Date:** 2026-05-05
+
+### Added
+
+- #21 Structural intervention beats pattern N+1. The complementary stop condition to #19. After two rounds of pattern-additions on the same detector for the same failure class, the third round is architectural (change when, what, or who), not another regex. Origin: response-linter session 2026-05-04 — three rounds of reactive patterns (PRs #451, #452, #487 in myOS) before the structural fix (always-on reminder env gate flipped to default-on, PR #488) closed an in-turn lapse loop. Soft-warn Stop-hooks alone cannot close in-turn lapses; preventive injection on UserPromptSubmit was the architecture change.
+
+### Why
+
+#21 was promoted internally in the myOS HWW section on 2026-05-04 but never graduated to this public repo. The drift was caught the next day by `~/myOS/scripts/repo-pair-drift-gate.py`, the SessionStart-wired detector built in CC-161 specifically to surface this class of public/private drift on every session start (silent on pass per mechanism #20).
+
+The detector that caught this is itself an instance of the pattern #21 describes: rather than adding pattern N+1 to `check-hww-parity.py` (which only covered the HWW pair), the structural fix was a registry-walker driving N strategies for N pairs. That refactor lives in myOS as `repo-pair-drift-gate.py` + `repo-pair-registry.yaml` (mechanism #15 symmetric application).
+
+### Counts
+
+Internal file count is the source-of-truth; the catalog enumerates in the table. With #21, the public catalog is now at 21 mechanisms. The "20+" qualitative anchor introduced in v2.1 remains the right form for marketing copy that does not need to track per-addition updates.
+
+Closes the gap detected by `repo-pair-drift-gate.py` on 2026-05-05.
+
+---
+
+## Unreleased (historical, retained for context)
+
 ### Changed
 
 - Mechanism #13 title aligned to myOS HWW source of truth. H1 and README link text updated from "Dry-run before data-patching [scripts]" to "Dry-run before committing data-patching scripts" (the word "committing" is a substantive qualifier, the dry-run happens before the first commit of the script, not every run). Filename kept unchanged (`mechanisms/13-dry-run-before-data-patching.md`) to preserve URL stability. `mechanisms.yaml` entry also updated. Detected by `~/myOS/scripts/check-hww-parity.py` phase 2 title-match check (CC-104).
