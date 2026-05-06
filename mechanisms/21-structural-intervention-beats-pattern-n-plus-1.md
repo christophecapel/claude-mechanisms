@@ -46,3 +46,9 @@ Decision tree at the third miss:
 3. **Is the failure spanning multiple surfaces?** The detector layer is wrong. Move to a higher abstraction (PreToolUse on the broader event, not PostToolUse on the narrow one).
 
 Pair with mechanism #19. They are complementary: #19 prevents complacency at miss 1; #21 prevents accumulation at miss 3.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.1.0 |

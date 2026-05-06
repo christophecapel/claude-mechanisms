@@ -58,6 +58,20 @@ Browse the [mechanisms/](mechanisms/) directory. Each file is self-contained. Co
 git clone https://github.com/christophecapel/claude-mechanisms.git ~/.claude/plugins/claude-mechanisms
 ```
 
+## Tools that implement these mechanisms
+
+Mechanisms describe how the work should be done. Tools enforce it. The companion repo [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools) packages tools that each implement one or more mechanisms here.
+
+v0.1 — Session Hygiene (3 tools):
+
+| Tool | Implements | Kind |
+|---|---|---|
+| [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [#16](mechanisms/16-smallest-shippable-first.md), [#11](mechanisms/11-one-branch-one-scope.md), [#1](mechanisms/01-discover-and-derive.md) | skill |
+| [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [#17](mechanisms/17-structural-checks-use-hooks.md), [#11](mechanisms/11-one-branch-one-scope.md) | hook |
+| [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [#21](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md), [#19](mechanisms/19-detection-rules-specific-patterns.md) | skill+script |
+
+Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
+
 ## About
 
 Built by [Christophe Capel](https://github.com/christophecapel) -- a product leader building a personal operating system with Claude Code and codifying the discipline that makes it work.

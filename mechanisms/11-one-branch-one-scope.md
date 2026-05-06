@@ -26,3 +26,10 @@ One branch, one scope. No late additions, no cross-commits. -- once a PR is read
 ```
 
 Pair with a pre-commit check: `git branch --show-current` before any `git add`. Enforce with a pre-push gate that blocks pushes to branches with already-merged PRs.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |
+| [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.1.0 |

@@ -30,3 +30,9 @@ Detection rules: more specific patterns, never broader allowlists. When a linter
 ```
 
 Trigger: any time a detection mechanism fails to flag a real problem. When the trigger fires, do not relax the matcher. Capture the exact failure string, add it as a regression test, add a specific pattern that catches it.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.1.0 |

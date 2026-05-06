@@ -12,14 +12,21 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-05-05
+updated: 2026-05-08
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
+implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
+release_pair: v0.1.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
     name: "Discover and derive, never assume or ask"
     file: mechanisms/01-discover-and-derive.md
     scope: session-wide
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/check/check.md
+        kind: skill
+        version_introduced: v0.1.0
   - id: 2
     name: "git mv, not cp + rm"
     file: mechanisms/02-git-mv-not-cp-rm.md
@@ -60,6 +67,15 @@ mechanisms:
     name: "One branch, one scope"
     file: mechanisms/11-one-branch-one-scope.md
     scope: git-operations
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/check/check.md
+        kind: skill
+        version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: hooks/worktree-edit-gate.py
+        kind: hook
+        version_introduced: v0.1.0
   - id: 12
     name: "Consolidate review in the artifact"
     file: mechanisms/12-consolidate-review-in-artifact.md
@@ -80,10 +96,20 @@ mechanisms:
     name: "Smallest shippable first"
     file: mechanisms/16-smallest-shippable-first.md
     scope: planning
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/check/check.md
+        kind: skill
+        version_introduced: v0.1.0
   - id: 17
     name: "Structural checks use hooks, not behavioral rules"
     file: mechanisms/17-structural-checks-use-hooks.md
     scope: meta
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: hooks/worktree-edit-gate.py
+        kind: hook
+        version_introduced: v0.1.0
   - id: 18
     name: "Safest path first on destructive ops"
     file: mechanisms/18-safest-path-first-destructive-ops.md
@@ -92,6 +118,11 @@ mechanisms:
     name: "Detection rules: more specific patterns, never broader allowlists"
     file: mechanisms/19-detection-rules-specific-patterns.md
     scope: detection
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/press1-check/audit-permissions.py
+        kind: skill+script
+        version_introduced: v0.1.0
   - id: 20
     name: "Hooks silent on pass"
     file: mechanisms/20-hooks-silent-on-pass.md
@@ -100,3 +131,8 @@ mechanisms:
     name: "Structural intervention beats pattern N+1"
     file: mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md
     scope: detection
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/press1-check/audit-permissions.py
+        kind: skill+script
+        version_introduced: v0.1.0

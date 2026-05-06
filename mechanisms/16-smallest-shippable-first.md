@@ -26,3 +26,9 @@ Smallest shippable first -- when a task is large, uncertain, or avoided, ship th
 ```
 
 Trigger: any task rolled over for 2+ days, described as "big" or "painful," or where the user seems stuck. When the trigger fires, propose the smallest shippable unit explicitly.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |

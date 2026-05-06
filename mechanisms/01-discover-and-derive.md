@@ -31,3 +31,9 @@ Discover and derive, never assume or ask -- before creating a file, check if it 
 ```
 
 This is the single highest-impact mechanism. It applies to every interaction.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |

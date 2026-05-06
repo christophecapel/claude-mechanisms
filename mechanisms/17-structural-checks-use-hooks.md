@@ -33,3 +33,9 @@ Structural checks use hooks, not behavioral rules. If a check is structural (sec
 ```
 
 Trigger: any time you catch yourself writing "remember to X" or "always check Y" in a memory file, rule, or `CLAUDE.md` instruction. Before shipping it as a rule, ask: "Is X structural?" If yes, write a hook instead.
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.1.0 |
