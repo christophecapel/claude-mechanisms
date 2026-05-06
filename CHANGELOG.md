@@ -2,7 +2,26 @@
 
 ## Unreleased
 
-(none — see v2.2 below)
+(none)
+
+---
+
+## v2.3 -- Implementations cross-links + paired tools repo
+
+**Date:** 2026-05-08
+
+### Added
+
+- `implementations:` field in `mechanisms.yaml` for mechanisms #1, #11, #16, #17, #19, #21. Each entry points to a tool in the new companion repo [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools) (v0.1.0).
+- `## Implementations` section in each affected `mechanisms/<id>-<slug>.md` linking forward to the implementing tool.
+- Reciprocal cross-link table in `README.md` under "Tools that implement these mechanisms."
+- `implementations_source` and `release_pair` fields in `mechanisms.yaml` header pointing at the paired tools repo and the release version.
+
+### Why
+
+The toolkit launch needs the cross-link to live on the mechanisms side too. Without it, the pair is one-way (tools → mechanisms) and the mechanisms catalog can't surface its own implementations. Now: pick a tool → find the mechanism. Pick a mechanism → find the tool.
+
+The `cross_manifest_id_match` drift-gate strategy in `repo-pair-drift-gate.py` is deferred to v0.1.1 of the tools repo (per HWW #16 — smallest shippable first). v0.1 verifies cross-link integrity manually at PR review time.
 
 ---
 
