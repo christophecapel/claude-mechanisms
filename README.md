@@ -83,6 +83,12 @@ v0.3 — Detection & Audit (1 tool):
 |---|---|---|
 | [`/error-audit`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/error-audit/SKILL.md) | [#19](mechanisms/19-detection-rules-specific-patterns.md), [#21](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md) | skill+script |
 
+v0.4 — Memory Discipline (1 tool):
+
+| Tool | Implements | Kind |
+|---|---|---|
+| [`feedback-memory-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/feedback-memory-gate.py) | [#17](mechanisms/17-structural-checks-use-hooks.md), [#5](mechanisms/05-deferred-work-needs-persistent-markers.md) | hook (PostToolUse) |
+
 Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
 
 ## About
