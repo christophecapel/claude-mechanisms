@@ -13,12 +13,12 @@
 
 version: 1
 updated: 2026-05-09
-# v0.4.0 cross-link extends implementations: on #17 with feedback-memory-gate
-# and on #5 (Linear ref IS the persistent marker). See claude-mechanisms-tools/
-# CHANGELOG.md v0.4.0.
+# v0.5.0 cross-link extends implementations: on #1, #11, #17 with
+# git-workflow-gate (5-gate atomic git workflow enforcement). See
+# claude-mechanisms-tools/CHANGELOG.md v0.5.0.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.4.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v0.5.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
@@ -30,6 +30,10 @@ mechanisms:
         path: skills/check/check.md
         kind: skill
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: hooks/git-workflow-gate.py
+        kind: hook
+        version_introduced: v0.5.0
   - id: 2
     name: "git mv, not cp + rm"
     file: mechanisms/02-git-mv-not-cp-rm.md
@@ -88,6 +92,10 @@ mechanisms:
         path: hooks/worktree-edit-gate.py
         kind: hook
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: hooks/git-workflow-gate.py
+        kind: hook
+        version_introduced: v0.5.0
   - id: 12
     name: "Consolidate review in the artifact"
     file: mechanisms/12-consolidate-review-in-artifact.md
@@ -139,6 +147,10 @@ mechanisms:
         path: hooks/feedback-memory-gate.py
         kind: hook
         version_introduced: v0.4.0
+      - repo: claude-mechanisms-tools
+        path: hooks/git-workflow-gate.py
+        kind: hook
+        version_introduced: v0.5.0
   - id: 18
     name: "Safest path first on destructive ops"
     file: mechanisms/18-safest-path-first-destructive-ops.md

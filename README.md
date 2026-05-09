@@ -89,6 +89,12 @@ v0.4 — Memory Discipline (1 tool):
 |---|---|---|
 | [`feedback-memory-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/feedback-memory-gate.py) | [#17](mechanisms/17-structural-checks-use-hooks.md), [#5](mechanisms/05-deferred-work-needs-persistent-markers.md) | hook (PostToolUse) |
 
+v0.5 — Atomic Git Workflow (1 tool, 5 gates):
+
+| Tool | Implements | Kind |
+|---|---|---|
+| [`git-workflow-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/git-workflow-gate.py) | [#1](mechanisms/01-discover-and-derive.md), [#11](mechanisms/11-one-branch-one-scope.md), [#17](mechanisms/17-structural-checks-use-hooks.md) | hook (PreToolUse + PostToolUse on `Bash`) |
+
 Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
 
 ## About
