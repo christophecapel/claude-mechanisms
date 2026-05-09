@@ -6,6 +6,25 @@
 
 ---
 
+## v2.5 -- Detection & Audit cross-links (paired with claude-mechanisms-tools v0.3.0)
+
+**Date:** 2026-05-09
+
+### Added
+
+- `implementations:` field on `mechanisms.yaml` #19 and #21 extended to include `/error-audit` (v0.3.0) alongside the existing `/press1-check` (v0.1.0).
+- `## Implementations` table on `mechanisms/19-detection-rules-specific-patterns.md` and `mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md` extended with `/error-audit` row.
+- README "Tools that implement these mechanisms" — v0.3 row added.
+- `release_pair: v0.3.0` in `mechanisms.yaml` header.
+
+### Why
+
+`claude-mechanisms-tools` v0.3.0 ships **Detection & Audit** — `/error-audit` clusters errors across every Claude Code session transcript, surfacing top offenders by `class:tool:signature`. It complements `/press1-check` (which surfaces *expected* friction in the form of permission prompts) by surfacing *unexpected* friction in the form of recurring errors. Both implement #19 (specific patterns) and #21 (structural intervention).
+
+Pairs with [`claude-mechanisms-tools` v0.3.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v0.3.0).
+
+---
+
 ## v2.4 -- Plan Discipline cross-links (paired with claude-mechanisms-tools v0.2.0)
 
 **Date:** 2026-05-08

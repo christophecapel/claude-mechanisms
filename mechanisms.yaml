@@ -12,12 +12,12 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-05-08
-# v0.2.0 cross-link adds plan-review-gate (hook) and plan-archive (skill+script)
-# implementing mechanisms #5, #14, #16, #17. See claude-mechanisms-tools/CHANGELOG.md.
+updated: 2026-05-09
+# v0.3.0 cross-link extends implementations: on #19 and #21 to include /error-audit
+# alongside /press1-check. See claude-mechanisms-tools/CHANGELOG.md v0.3.0.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.2.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v0.3.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
@@ -143,6 +143,10 @@ mechanisms:
         path: skills/press1-check/audit-permissions.py
         kind: skill+script
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: skills/error-audit/error-audit.py
+        kind: skill+script
+        version_introduced: v0.3.0
   - id: 20
     name: "Hooks silent on pass"
     file: mechanisms/20-hooks-silent-on-pass.md
@@ -156,3 +160,7 @@ mechanisms:
         path: skills/press1-check/audit-permissions.py
         kind: skill+script
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: skills/error-audit/error-audit.py
+        kind: skill+script
+        version_introduced: v0.3.0
