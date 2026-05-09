@@ -33,3 +33,4 @@ Pair with a pre-commit check: `git branch --show-current` before any `git add`. 
 |---|---|---|---|
 | [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |
 | [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.1.0 |
+| [`git-workflow-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/git-workflow-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (Pre+PostToolUse) | v0.5.0 |

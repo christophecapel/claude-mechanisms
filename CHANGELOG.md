@@ -6,6 +6,28 @@
 
 ---
 
+## v2.7 -- Atomic Git Workflow cross-links (paired with claude-mechanisms-tools v0.5.0)
+
+**Date:** 2026-05-09
+
+### Added
+
+- `implementations:` field on `mechanisms.yaml` extended:
+  - **#1** (Discover and derive) — second implementation: `git-workflow-gate` (v0.5.0) alongside `/check` (v0.1.0). The gate derives branch state, rebase status, frozen-PR state, and commit-message format from the live repo before any git action — no assumption, no asking.
+  - **#11** (One branch, one scope) — third implementation: `git-workflow-gate` (v0.5.0) alongside `/check` (v0.1.0) and `worktree-edit-gate` (v0.1.0). Pre-commit branch verification + frozen-branch (merged-PR) push block enforce the structural side of one-branch-one-scope.
+  - **#17** (Structural checks use hooks) — fourth implementation: `git-workflow-gate` (v0.5.0) alongside `worktree-edit-gate` (v0.1.0), `plan-review-gate` (v0.2.0), and `feedback-memory-gate` (v0.4.0). Five gates as PreToolUse + PostToolUse on `Bash` matcher.
+- `## Implementations` table extended on `mechanisms/01-discover-and-derive.md`, `mechanisms/11-one-branch-one-scope.md`, and `mechanisms/17-structural-checks-use-hooks.md`.
+- README "Tools that implement these mechanisms" — v0.5 row added.
+- `release_pair: v0.5.0` in `mechanisms.yaml` header.
+
+### Why
+
+`claude-mechanisms-tools` v0.5.0 ships **Atomic Git Workflow** — one tool, five gates that prevent the most common git workflow mistakes: committing to main, malformed commit messages, pushing while behind origin/main, pushing to a frozen (merged-PR) branch, and pushing without an open PR. Slim 453-LOC subset extracted from the 2,017-LOC myOS gate, decoupled from myOS-specific concerns (Linear auto-Done, session-start digest, memory-index integrity, blocked-remotes, owner-pattern). Per-repo `.commit-types` override ships verbatim.
+
+Pairs with [`claude-mechanisms-tools` v0.5.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v0.5.0).
+
+---
+
 ## v2.6 -- Memory Discipline cross-links (paired with claude-mechanisms-tools v0.4.0)
 
 **Date:** 2026-05-09

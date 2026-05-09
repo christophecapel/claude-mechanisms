@@ -37,3 +37,4 @@ This is the single highest-impact mechanism. It applies to every interaction.
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |
+| [`git-workflow-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/git-workflow-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook | v0.5.0 |
