@@ -21,3 +21,9 @@ Trace the cascade before exiting plan mode -- for any change that touches a pipe
 ```
 
 Before finalizing any plan that involves data flowing through stages, enumerate every stage and ask the cascade question. The answer is always either a reconciliation mechanism or an explicit "this is acceptable staleness."
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`plan-review-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/plan-review-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.2.0 |

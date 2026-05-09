@@ -6,6 +6,24 @@
 
 ---
 
+## v2.4 -- Plan Discipline cross-links (paired with claude-mechanisms-tools v0.2.0)
+
+**Date:** 2026-05-08
+
+### Added
+
+- `implementations:` field in `mechanisms.yaml` for mechanisms #5, #14, #16, #17 — each pointing to the corresponding v0.2.0 tool in [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
+- `## Implementations` section in `mechanisms/05-deferred-work-needs-persistent-markers.md` (new — `/plan-archive`), `mechanisms/14-trace-the-cascade.md` (new — `plan-review-gate`), `mechanisms/16-smallest-shippable-first.md` (extended), `mechanisms/17-structural-checks-use-hooks.md` (extended).
+- `release_pair: v0.2.0` in `mechanisms.yaml` header.
+
+### Why
+
+`claude-mechanisms-tools` v0.2.0 ships **Plan Discipline** — `plan-review-gate` (Phase 1 ExitPlanMode + Phase 2 PR-create gates) and `/plan-archive` (links plan-mode files to merged PRs). Both filled previously empty `implementations:` slots. Cross-link discipline keeps the pair bidirectional: pick a tool → find the mechanism; pick a mechanism → find the tool.
+
+Pairs with [`claude-mechanisms-tools` v0.2.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v0.2.0).
+
+---
+
 ## v2.3 -- Implementations cross-links + paired tools repo
 
 **Date:** 2026-05-08

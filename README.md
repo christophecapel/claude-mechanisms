@@ -70,6 +70,13 @@ v0.1 — Session Hygiene (3 tools):
 | [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [#17](mechanisms/17-structural-checks-use-hooks.md), [#11](mechanisms/11-one-branch-one-scope.md) | hook |
 | [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [#21](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md), [#19](mechanisms/19-detection-rules-specific-patterns.md) | skill+script |
 
+v0.2 — Plan Discipline (2 tools):
+
+| Tool | Implements | Kind |
+|---|---|---|
+| [`plan-review-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/plan-review-gate.py) | [#14](mechanisms/14-trace-the-cascade.md), [#16](mechanisms/16-smallest-shippable-first.md), [#17](mechanisms/17-structural-checks-use-hooks.md) | hook (PreToolUse on `ExitPlanMode` + `Bash`) |
+| [`/plan-archive`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/plan-archive/SKILL.md) | [#5](mechanisms/05-deferred-work-needs-persistent-markers.md) | skill+script |
+
 Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
 
 ## About

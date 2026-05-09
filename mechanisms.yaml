@@ -13,9 +13,11 @@
 
 version: 1
 updated: 2026-05-08
+# v0.2.0 cross-link adds plan-review-gate (hook) and plan-archive (skill+script)
+# implementing mechanisms #5, #14, #16, #17. See claude-mechanisms-tools/CHANGELOG.md.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.1.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v0.2.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
@@ -43,6 +45,11 @@ mechanisms:
     name: "Deferred work needs persistent markers"
     file: mechanisms/05-deferred-work-needs-persistent-markers.md
     scope: session-wide
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: skills/plan-archive/plan-archive.py
+        kind: skill+script
+        version_introduced: v0.2.0
   - id: 6
     name: "Fix conflicts autonomously"
     file: mechanisms/06-fix-conflicts-autonomously.md
@@ -88,6 +95,11 @@ mechanisms:
     name: "Trace the cascade"
     file: mechanisms/14-trace-the-cascade.md
     scope: planning
+    implementations:
+      - repo: claude-mechanisms-tools
+        path: hooks/plan-review-gate.py
+        kind: hook
+        version_introduced: v0.2.0
   - id: 15
     name: "Build callables, not embedded logic"
     file: mechanisms/15-build-callables-not-embedded-logic.md
@@ -101,6 +113,10 @@ mechanisms:
         path: skills/check/check.md
         kind: skill
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: hooks/plan-review-gate.py
+        kind: hook
+        version_introduced: v0.2.0
   - id: 17
     name: "Structural checks use hooks, not behavioral rules"
     file: mechanisms/17-structural-checks-use-hooks.md
@@ -110,6 +126,10 @@ mechanisms:
         path: hooks/worktree-edit-gate.py
         kind: hook
         version_introduced: v0.1.0
+      - repo: claude-mechanisms-tools
+        path: hooks/plan-review-gate.py
+        kind: hook
+        version_introduced: v0.2.0
   - id: 18
     name: "Safest path first on destructive ops"
     file: mechanisms/18-safest-path-first-destructive-ops.md

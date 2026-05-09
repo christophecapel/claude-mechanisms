@@ -39,3 +39,4 @@ Trigger: any time you catch yourself writing "remember to X" or "always check Y"
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`worktree-edit-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/worktree-edit-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.1.0 |
+| [`plan-review-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/plan-review-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.2.0 |

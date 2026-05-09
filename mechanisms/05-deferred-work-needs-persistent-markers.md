@@ -19,3 +19,9 @@ Deferred work needs persistent markers -- verbal instructions to "do it next tim
 ```
 
 Pair with a session-start routine that scans for deferred markers. The mechanism has two parts: the write (when deferring) and the read (when starting).
+
+## Implementations
+
+| Tool | Repo | Kind | Introduced |
+|---|---|---|---|
+| [`/plan-archive`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/plan-archive/SKILL.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.2.0 |

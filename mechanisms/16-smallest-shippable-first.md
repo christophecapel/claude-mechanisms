@@ -32,3 +32,4 @@ Trigger: any task rolled over for 2+ days, described as "big" or "painful," or w
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`/check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/check/check.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill | v0.1.0 |
+| [`plan-review-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/plan-review-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PreToolUse) | v0.2.0 |
