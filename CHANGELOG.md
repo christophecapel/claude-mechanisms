@@ -6,6 +6,27 @@
 
 ---
 
+## v2.6 -- Memory Discipline cross-links (paired with claude-mechanisms-tools v0.4.0)
+
+**Date:** 2026-05-09
+
+### Added
+
+- `implementations:` field on `mechanisms.yaml` extended:
+  - **#17** (Structural checks use hooks) — third implementation: `feedback-memory-gate` (v0.4.0) alongside `worktree-edit-gate` (v0.1.0) and `plan-review-gate` (v0.2.0).
+  - **#5** (Deferred work needs persistent markers) — second implementation: `feedback-memory-gate` (v0.4.0) alongside `/plan-archive` (v0.2.0). The Linear ticket created in response to a bug-describing feedback memory IS the persistent marker linking the captured failure to its remediation.
+- `## Implementations` table extended on `mechanisms/05-deferred-work-needs-persistent-markers.md` and `mechanisms/17-structural-checks-use-hooks.md`.
+- README "Tools that implement these mechanisms" — v0.4 row added.
+- `release_pair: v0.4.0` in `mechanisms.yaml` header.
+
+### Why
+
+`claude-mechanisms-tools` v0.4.0 ships **Memory Discipline** — a single PostToolUse hook (`feedback-memory-gate`) that nudges Claude to add a `**Linear:** CC-NN` reference whenever a feedback memory describes a bug. Soft warning, not a hard block. Battle-tested 4+ weeks before extraction. Enforces what was previously a behavioral rule — turning it into a structural check (#17) and ensuring deferred bug remediations carry persistent markers (#5).
+
+Pairs with [`claude-mechanisms-tools` v0.4.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v0.4.0).
+
+---
+
 ## v2.5 -- Detection & Audit cross-links (paired with claude-mechanisms-tools v0.3.0)
 
 **Date:** 2026-05-09

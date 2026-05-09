@@ -13,11 +13,12 @@
 
 version: 1
 updated: 2026-05-09
-# v0.3.0 cross-link extends implementations: on #19 and #21 to include /error-audit
-# alongside /press1-check. See claude-mechanisms-tools/CHANGELOG.md v0.3.0.
+# v0.4.0 cross-link extends implementations: on #17 with feedback-memory-gate
+# and on #5 (Linear ref IS the persistent marker). See claude-mechanisms-tools/
+# CHANGELOG.md v0.4.0.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.3.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v0.4.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
@@ -50,6 +51,10 @@ mechanisms:
         path: skills/plan-archive/plan-archive.py
         kind: skill+script
         version_introduced: v0.2.0
+      - repo: claude-mechanisms-tools
+        path: hooks/feedback-memory-gate.py
+        kind: hook
+        version_introduced: v0.4.0
   - id: 6
     name: "Fix conflicts autonomously"
     file: mechanisms/06-fix-conflicts-autonomously.md
@@ -130,6 +135,10 @@ mechanisms:
         path: hooks/plan-review-gate.py
         kind: hook
         version_introduced: v0.2.0
+      - repo: claude-mechanisms-tools
+        path: hooks/feedback-memory-gate.py
+        kind: hook
+        version_introduced: v0.4.0
   - id: 18
     name: "Safest path first on destructive ops"
     file: mechanisms/18-safest-path-first-destructive-ops.md

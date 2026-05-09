@@ -25,3 +25,4 @@ Pair with a session-start routine that scans for deferred markers. The mechanism
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`/plan-archive`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/plan-archive/SKILL.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.2.0 |
+| [`feedback-memory-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/feedback-memory-gate.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | hook (PostToolUse) | v0.4.0 |
