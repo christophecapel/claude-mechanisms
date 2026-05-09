@@ -77,6 +77,12 @@ v0.2 — Plan Discipline (2 tools):
 | [`plan-review-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/plan-review-gate.py) | [#14](mechanisms/14-trace-the-cascade.md), [#16](mechanisms/16-smallest-shippable-first.md), [#17](mechanisms/17-structural-checks-use-hooks.md) | hook (PreToolUse on `ExitPlanMode` + `Bash`) |
 | [`/plan-archive`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/plan-archive/SKILL.md) | [#5](mechanisms/05-deferred-work-needs-persistent-markers.md) | skill+script |
 
+v0.3 — Detection & Audit (1 tool):
+
+| Tool | Implements | Kind |
+|---|---|---|
+| [`/error-audit`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/error-audit/SKILL.md) | [#19](mechanisms/19-detection-rules-specific-patterns.md), [#21](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md) | skill+script |
+
 Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
 
 ## About

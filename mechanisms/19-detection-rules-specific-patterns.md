@@ -36,3 +36,4 @@ Trigger: any time a detection mechanism fails to flag a real problem. When the t
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.1.0 |
+| [`/error-audit`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/error-audit/SKILL.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.3.0 |

@@ -52,3 +52,4 @@ Pair with mechanism #19. They are complementary: #19 prevents complacency at mis
 | Tool | Repo | Kind | Introduced |
 |---|---|---|---|
 | [`/press1-check`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/press1-check/audit-permissions.py) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.1.0 |
+| [`/error-audit`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/skills/error-audit/SKILL.md) | [claude-mechanisms-tools](https://github.com/christophecapel/claude-mechanisms-tools) | skill+script | v0.3.0 |
