@@ -6,6 +6,39 @@
 
 ---
 
+## v3.0 -- Stability release & public-repo polish (paired with claude-mechanisms-tools v1.0.0)
+
+**Date:** 2026-05-10
+
+No-content release that marks the catalog as stable. 21 mechanisms cataloged. Bundles standard public-repo artifacts that were missing — including the previously-missing LICENSE (now MIT, matching the toolkit pair).
+
+Tracks [CC-180](https://linear.app/christophec/issue/CC-180).
+
+### Added
+
+- **`LICENSE`** — MIT (was missing; critical legal gap fixed)
+- **`CONTRIBUTING.md`** — How to propose new mechanisms (file shape, manifest entry, cross-link expectations)
+- **`CODE_OF_CONDUCT.md`** — Contributor Covenant 2.1
+- **`SECURITY.md`** — Disclosure policy
+- **`.github/ISSUE_TEMPLATE/bug_report.md`**, **`feature_request.md`**, **`mechanism_proposal.md`** — three issue templates including a mechanism-proposal template with explicit failure-mode + trigger + retry + structural-not-behavioral fields
+- **`.github/PULL_REQUEST_TEMPLATE.md`** — PR template
+- **`.gitignore`** — `.claude/`, `.DS_Store`, etc.
+- **README "Stability commitment" section** — explicit v3.x guarantees: mechanism IDs permanent, file paths stable, schema preserved, cross-link contract permanent
+
+### Changed
+
+- **`mechanisms.yaml`** — `release_pair: v1.0.0`; comment header updated
+- **GitHub repo metadata** — homepage cross-links to [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools); topics added; Discussions enabled; Wiki disabled
+- **`README.md`** — version badge added (v3.0), stability badge added, stability commitment section
+
+### Stability commitment
+
+v3.0 means existing mechanism IDs (1-21), file paths (`mechanisms/NN-name.md`), `mechanisms.yaml` schema, and the bidirectional cross-link contract with the toolkit are permanent. New mechanisms append at the next free ID; existing ones never get renumbered. See README's "Stability commitment" section.
+
+Pairs with [`claude-mechanisms-tools` v1.0.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v1.0.0).
+
+---
+
 ## v2.8 -- Stale-branches digest cross-link bump (paired with claude-mechanisms-tools v0.6.0)
 
 **Date:** 2026-05-10
