@@ -1,0 +1,8 @@
+.claude/
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+.idea/
+.vscode/

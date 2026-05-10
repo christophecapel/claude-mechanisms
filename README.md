@@ -2,6 +2,8 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Built for](https://img.shields.io/badge/Built%20for-Claude%20Code-orange.svg)
+![Version](https://img.shields.io/badge/version-v3.0-blue.svg)
+![Stability](https://img.shields.io/badge/stability-stable-brightgreen.svg)
 
 > "Good intentions don't work. Mechanisms do." -- Jeff Bezos
 
@@ -19,6 +21,28 @@ A mechanism has:
 - A **defined expected outcome**
 - **Retry logic** (up to N attempts) when the outcome isn't met
 - A **failure notification** if retries are exhausted -- never fail silently
+
+## Stability commitment (v3.0)
+
+v3.0 marks the catalog as **stable**. 21 mechanisms cataloged, with implementations across 5 release themes in the paired [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
+
+**What stable means here:**
+
+- Existing **mechanism IDs are permanent**. The numbers (1-21) are stable identifiers used by `tools.yaml` `mechanism_ids:` arrays in the toolkit. They never get renumbered or reused.
+- Existing **mechanism file paths** (`mechanisms/NN-name.md`) WILL NOT break in v3.x
+- Existing **`mechanisms.yaml` entries** (id, name, file, scope, implementations) preserve their schema in v3.x
+- The bidirectional **cross-link contract** with the toolkit is permanent: every `mechanisms.yaml` `implementations:` path resolves to a real toolkit file
+
+**What's still allowed:**
+
+- New mechanisms appended (next ID = max + 1)
+- Mechanism file content refined for clarity (the prose may improve; the structure stays)
+- New implementations added to existing mechanisms' `## Implementations` tables as new tools ship
+- Deprecation: a mechanism may be marked superseded; it never gets deleted
+
+Breaking changes (renumbering, schema changes, cross-link contract changes) ship as v4.0 with a deprecation cycle.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to propose new mechanisms.
 
 ## The mechanisms
 

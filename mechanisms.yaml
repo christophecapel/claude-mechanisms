@@ -13,12 +13,12 @@
 
 version: 1
 updated: 2026-05-10
-# v0.6.0 cross-link adds no new mechanism mappings — Gate 6 (stale-branches
-# SessionStart digest) extends the existing git-workflow-gate already mapped
-# on #1, #11, #17. Release pair bumped for traceability.
+# v3.0 stability release — paired with toolkit v1.0.0. No mechanism content
+# changes; release_pair bumped for traceability. Mechanism IDs (1-21) are
+# now permanent stable identifiers per the v3.0 stability commitment.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.6.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v1.0.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
