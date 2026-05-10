@@ -12,13 +12,13 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-05-09
-# v0.5.0 cross-link extends implementations: on #1, #11, #17 with
-# git-workflow-gate (5-gate atomic git workflow enforcement). See
-# claude-mechanisms-tools/CHANGELOG.md v0.5.0.
+updated: 2026-05-10
+# v0.6.0 cross-link adds no new mechanism mappings — Gate 6 (stale-branches
+# SessionStart digest) extends the existing git-workflow-gate already mapped
+# on #1, #11, #17. Release pair bumped for traceability.
 hww_source: CLAUDE.md  # in myOS repo; the "How We Work" section is the source of truth
 implementations_source: github.com/christophecapel/claude-mechanisms-tools  # paired tools repo
-release_pair: v0.5.0  # claude-mechanisms-tools release implementing entries below
+release_pair: v0.6.0  # claude-mechanisms-tools release implementing entries below
 
 mechanisms:
   - id: 1
