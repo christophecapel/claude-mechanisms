@@ -6,6 +6,23 @@
 
 ---
 
+## v2.8 -- Stale-branches digest cross-link bump (paired with claude-mechanisms-tools v0.6.0)
+
+**Date:** 2026-05-10
+
+### Added
+
+- `release_pair: v0.6.0` in `mechanisms.yaml` header.
+- README "Tools that implement these mechanisms" — v0.6 row added.
+
+### Why
+
+`claude-mechanisms-tools` v0.6.0 adds **Gate 6** to the existing `git-workflow-gate` — a SessionStart hook that scans for merged feature branches awaiting `git branch -d` cleanup. No new mechanism mapping needed: Gate 6 extends an existing tool already mapped to mechanisms #1 (Discover and derive), #11 (One branch, one scope), and #17 (Structural checks use hooks). The release-pair bump preserves bidirectional traceability between the toolkit's v0.6.0 release and the mechanisms catalog.
+
+Pairs with [`claude-mechanisms-tools` v0.6.0 release](https://github.com/christophecapel/claude-mechanisms-tools/releases/tag/v0.6.0). Tracks [CC-179](https://linear.app/christophec/issue/CC-179).
+
+---
+
 ## v2.7 -- Atomic Git Workflow cross-links (paired with claude-mechanisms-tools v0.5.0)
 
 **Date:** 2026-05-09

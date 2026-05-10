@@ -95,6 +95,13 @@ v0.5 — Atomic Git Workflow (1 tool, 5 gates):
 |---|---|---|
 | [`git-workflow-gate`](https://github.com/christophecapel/claude-mechanisms-tools/blob/main/hooks/git-workflow-gate.py) | [#1](mechanisms/01-discover-and-derive.md), [#11](mechanisms/11-one-branch-one-scope.md), [#17](mechanisms/17-structural-checks-use-hooks.md) | hook (PreToolUse + PostToolUse on `Bash`) |
 
+v0.5.1 / v0.6.0 — Gate 3 + Gate 6 (same `git-workflow-gate`, no new tool):
+
+| Patch | Adds | Implements |
+|---|---|---|
+| v0.5.1 | Gate 3 — Pre-checkout dirty-tree deny on branch switch | [#1](mechanisms/01-discover-and-derive.md), [#11](mechanisms/11-one-branch-one-scope.md), [#17](mechanisms/17-structural-checks-use-hooks.md) |
+| v0.6.0 | Gate 6 — SessionStart stale-branches digest (info-nag) | [#1](mechanisms/01-discover-and-derive.md), [#11](mechanisms/11-one-branch-one-scope.md), [#17](mechanisms/17-structural-checks-use-hooks.md) |
+
 Each mechanism in this catalog with at least one implementation has an `## Implementations` section linking forward to the tool. The full cross-link manifest is in [`mechanisms.yaml`](mechanisms.yaml) under the `implementations:` field of each mechanism.
 
 ## About
