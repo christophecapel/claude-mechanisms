@@ -6,6 +6,23 @@
 
 ---
 
+## v3.1 -- Catalog sync: mechanism #23 + finish #22 README bump
+
+**Date:** 2026-05-25
+
+Closes the HWW-to-catalog drift the detector flagged. Mechanism #22 landed via PR #13 but its README surfaces were never updated (count + ID range stayed at 21, no table row) — a code-not-whole-package half-sync. This release adds #23 and finishes #22's README integration so all surfaces read 23.
+
+### Added
+
+- **`mechanisms/23-unit-test-parts-then-e2e-whole.md`** — per-component unit tests AND a final end-to-end integration run against real state; a green gate is not running the thing. Covers multi-step recovery/backup/fallback flows. (HWW #23, promotes CC-234)
+- `mechanisms.yaml` entry for #23 (scope: testing).
+
+### Changed
+
+- **`README.md`** — catalog count 21 -> 23, ID range (1-21) -> (1-23), and the missing table rows for #22 and #23 added.
+
+---
+
 ## v3.0 -- Stability release & public-repo polish (paired with claude-mechanisms-tools v1.0.0)
 
 **Date:** 2026-05-10

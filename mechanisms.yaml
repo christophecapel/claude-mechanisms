@@ -189,3 +189,7 @@ mechanisms:
     name: "A failure fix is a memory AND a mechanism"
     file: mechanisms/22-failure-fix-memory-and-mechanism.md
     scope: process
+  - id: 23
+    name: "Unit-test the parts, then end-to-end-test the whole"
+    file: mechanisms/23-unit-test-parts-then-e2e-whole.md
+    scope: testing
