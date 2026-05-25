@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Built for](https://img.shields.io/badge/Built%20for-Claude%20Code-orange.svg)
-![Version](https://img.shields.io/badge/version-v3.0-blue.svg)
+![Version](https://img.shields.io/badge/version-v3.1-blue.svg)
 ![Stability](https://img.shields.io/badge/stability-stable-brightgreen.svg)
 
 > "Good intentions don't work. Mechanisms do." -- Jeff Bezos
