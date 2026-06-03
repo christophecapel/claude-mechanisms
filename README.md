@@ -24,11 +24,11 @@ A mechanism has:
 
 ## Stability commitment (v3.0)
 
-v3.0 marks the catalog as **stable**. 23 mechanisms cataloged, with implementations across 5 release themes in the paired [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
+v3.0 marks the catalog as **stable**. 25 mechanisms cataloged, with implementations across 5 release themes in the paired [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
 
 **What stable means here:**
 
-- Existing **mechanism IDs are permanent**. The numbers (1-23) are stable identifiers used by `tools.yaml` `mechanism_ids:` arrays in the toolkit. They never get renumbered or reused.
+- Existing **mechanism IDs are permanent**. The numbers (1-25) are stable identifiers used by `tools.yaml` `mechanism_ids:` arrays in the toolkit. They never get renumbered or reused.
 - Existing **mechanism file paths** (`mechanisms/NN-name.md`) WILL NOT break in v3.x
 - Existing **`mechanisms.yaml` entries** (id, name, file, scope, implementations) preserve their schema in v3.x
 - The bidirectional **cross-link contract** with the toolkit is permanent: every `mechanisms.yaml` `implementations:` path resolves to a real toolkit file
@@ -71,6 +71,8 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to propose new mechanisms.
 | 21 | [Structural intervention beats pattern N+1](mechanisms/21-structural-intervention-beats-pattern-n-plus-1.md) | After two rounds of patterns on the same detector, the third round is architectural |
 | 22 | [A failure fix is a memory and a mechanism](mechanisms/22-failure-fix-memory-and-mechanism.md) | A memory records the lesson; a mechanism enforces it. Ship both. |
 | 23 | [Unit-test the parts, then end-to-end-test the whole](mechanisms/23-unit-test-parts-then-e2e-whole.md) | Per-component unit tests AND a final real end-to-end run; a green gate is not running the thing |
+| 24 | [Unblock the parallel path before your own serial work](mechanisms/24-unblock-parallel-path-before-serial-work.md) | Hand off concurrent work (a brief, a task, an interface) before doing your blocking work; optimize for others' throughput |
+| 25 | [Plan before build](mechanisms/25-plan-before-build.md) | Substantive code needs an approved plan first; reading is free, building is gated; one-line fixes exempt |
 
 ## Quick start
 
