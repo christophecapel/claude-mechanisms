@@ -12,7 +12,7 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-05-10
+updated: 2026-06-03
 # v3.0 stability release — paired with toolkit v1.0.0. No mechanism content
 # changes; release_pair bumped for traceability. Mechanism IDs (1-21) are
 # now permanent stable identifiers per the v3.0 stability commitment.
@@ -193,3 +193,11 @@ mechanisms:
     name: "Unit-test the parts, then end-to-end-test the whole"
     file: mechanisms/23-unit-test-parts-then-e2e-whole.md
     scope: testing
+  - id: 24
+    name: "Unblock the parallel path before your own serial work"
+    file: mechanisms/24-unblock-parallel-path-before-serial-work.md
+    scope: process
+  - id: 25
+    name: "Plan before build"
+    file: mechanisms/25-plan-before-build.md
+    scope: process

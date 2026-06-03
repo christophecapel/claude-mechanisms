@@ -6,6 +6,24 @@
 
 ---
 
+## v3.2 -- Catalog sync: mechanisms #24 + #25
+
+**Date:** 2026-06-03
+
+Closes the HWW-to-catalog drift the parity gate flagged every session. HWW #24 and #25 were added to the private myOS source of truth but never mirrored here, leaving manifest + files at 23 against 25 HWW entries. This release adds both so all surfaces read 25.
+
+### Added
+
+- **`mechanisms/24-unblock-parallel-path-before-serial-work.md`** -- before a blocking action (commit, long build, sequential dependency), hand off any concurrent work first; optimize for others' wall-clock throughput. Semantic, judge-enforced via `serial_work_before_parallel_dispatch`. (HWW #24)
+- **`mechanisms/25-plan-before-build.md`** -- substantive code needs an approved plan before building; reading is unrestricted, building is gated; one-line fixes exempt. Structural, enforced by `plan-before-build-gate.py`. (HWW #25)
+- `mechanisms.yaml` entries for #24 and #25 (scope: process).
+
+### Changed
+
+- **`README.md`** -- catalog count 23 -> 25, ID range (1-23) -> (1-25), table rows for #24 and #25 added.
+
+---
+
 ## v3.1 -- Catalog sync: mechanism #23 + finish #22 README bump
 
 **Date:** 2026-05-25
