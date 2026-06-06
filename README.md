@@ -24,7 +24,7 @@ A mechanism has:
 
 ## Stability commitment (v3.0)
 
-v3.0 marks the catalog as **stable**. 25 mechanisms cataloged, with implementations across 5 release themes in the paired [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
+v3.0 marks the catalog as **stable**. 26 mechanisms cataloged, with implementations across 5 release themes in the paired [`claude-mechanisms-tools`](https://github.com/christophecapel/claude-mechanisms-tools).
 
 **What stable means here:**
 
@@ -73,6 +73,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to propose new mechanisms.
 | 23 | [Unit-test the parts, then end-to-end-test the whole](mechanisms/23-unit-test-parts-then-e2e-whole.md) | Per-component unit tests AND a final real end-to-end run; a green gate is not running the thing |
 | 24 | [Unblock the parallel path before your own serial work](mechanisms/24-unblock-parallel-path-before-serial-work.md) | Hand off concurrent work (a brief, a task, an interface) before doing your blocking work; optimize for others' throughput |
 | 25 | [Plan before build](mechanisms/25-plan-before-build.md) | Substantive code needs an approved plan first; reading is free, building is gated; one-line fixes exempt |
+| 26 | [Claude cannot defer on time; important work is done now or next](mechanisms/26-claude-cannot-defer-on-time.md) | Time is never a deferral reason; the timing call is the user's; quick work is simply done, not offered as a choice |
 
 ## Quick start
 
