@@ -201,3 +201,7 @@ mechanisms:
     name: "Plan before build"
     file: mechanisms/25-plan-before-build.md
     scope: process
+  - id: 26
+    name: "Claude cannot defer on time; important work is done now or next"
+    file: mechanisms/26-claude-cannot-defer-on-time.md
+    scope: process

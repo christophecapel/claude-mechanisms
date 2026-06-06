@@ -6,6 +6,20 @@
 
 ---
 
+## v3.3 -- Catalog sync: mechanism #26
+
+**Date:** 2026-06-06
+
+Closes the HWW-to-catalog drift the parity gate flagged every session. HWW #26 was added to the private myOS source of truth but not yet mirrored here, leaving manifest + files at 25 against 26 HWW entries. This release adds it so all surfaces read 26.
+
+### Added
+
+- **`mechanisms/26-claude-cannot-defer-on-time.md`** -- time is never a valid deferral reason; the timing call is the user's alone. Quick work is simply done, not offered as a choice; only genuinely complex or risky work earns a decision block, and a deferral is valid only on a named non-time blocker. Sharpens the bias for action rather than softening it. (HWW #26)
+- `mechanisms.yaml` entry for #26 (scope: process).
+- README catalog row for #26.
+
+---
+
 ## v3.2 -- Catalog sync: mechanisms #24 + #25
 
 **Date:** 2026-06-03
