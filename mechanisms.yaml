@@ -12,7 +12,7 @@
 # Tracking ticket: CC-104.
 
 version: 1
-updated: 2026-06-03
+updated: 2026-06-07
 # v3.0 stability release — paired with toolkit v1.0.0. No mechanism content
 # changes; release_pair bumped for traceability. Mechanism IDs (1-21) are
 # now permanent stable identifiers per the v3.0 stability commitment.
@@ -205,3 +205,7 @@ mechanisms:
     name: "Claude cannot defer on time; important work is done now or next"
     file: mechanisms/26-claude-cannot-defer-on-time.md
     scope: process
+  - id: 27
+    name: "A mechanism is not done until it is wired, measured, and self-surfacing"
+    file: mechanisms/27-mechanism-wired-measured-self-surfacing.md
+    scope: meta
