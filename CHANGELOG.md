@@ -6,6 +6,23 @@
 
 ---
 
+## v3.4 -- Catalog sync: mechanism #27
+
+**Date:** 2026-06-07
+
+Closes the HWW-to-catalog drift the parity gate flags every session. HWW #27 was added to the private myOS source of truth but not yet mirrored here, leaving manifest + files at 26 against 27 HWW entries. This release adds it so all surfaces read 27.
+
+### Added
+
+- **`mechanisms/27-mechanism-wired-measured-self-surfacing.md`** -- a mechanism is done only when wired, measured, and self-surfacing: verify the connection (does it fire?), the metric (how do we know it works?), and the trigger (no human memory), not just that the artifact exists. Origin: the 2026-06-07 hook-wiring audit found 3 live dead hooks (declared but never firing). (HWW #27)
+- `mechanisms.yaml` entry for #27 (scope: meta).
+
+### Changed
+
+- **`README.md`** -- catalog count 26 -> 27, table row for #27 added.
+
+---
+
 ## v3.3 -- Catalog sync: mechanism #26
 
 **Date:** 2026-06-06
