@@ -151,6 +151,10 @@ mechanisms:
         path: hooks/git-workflow-gate.py
         kind: hook
         version_introduced: v0.5.0
+      - repo: claude-mechanisms-tools
+        path: hooks/press1-prevent-gate.py
+        kind: hook
+        version_introduced: v1.1.0
   - id: 18
     name: "Safest path first on destructive ops"
     file: mechanisms/18-safest-path-first-destructive-ops.md
@@ -185,6 +189,10 @@ mechanisms:
         path: skills/error-audit/error-audit.py
         kind: skill+script
         version_introduced: v0.3.0
+      - repo: claude-mechanisms-tools
+        path: hooks/press1-prevent-gate.py
+        kind: hook
+        version_introduced: v1.1.0
   - id: 22
     name: "A failure fix is a memory AND a mechanism"
     file: mechanisms/22-failure-fix-memory-and-mechanism.md
