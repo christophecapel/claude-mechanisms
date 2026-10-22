@@ -6,6 +6,8 @@
 
 Never propose a "complete" first version. Ship the smallest slice that validates the hypothesis or delivers the highest-impact unit. The first ship is a forcing function for learning, not a down payment on the final version.
 
+**Smallest first is an order, not a ceiling.** The plan names the root cause and the full fix, then ships the first slice and says what follows. A plan that only names a small step reads as "do the smallest thing and stop", and fixes the symptom instead of the cause.
+
 This applies to:
 - **Product**: Bet on the smallest cycle that proves the idea (Shape Up)
 - **Engineering**: One endpoint before the full API, one test before the suite
@@ -17,12 +19,14 @@ Tasks that rolled over for 2+ days shared a common pattern: they were framed as 
 
 The complete version is what comes AFTER the small ship has built momentum, never what gets cut down from.
 
+The clarification came later. Read literally, "ship the smallest slice" was applied to scope, not order: plans for a CI quota overrun, an expired token and a silently capped judge each fixed the visible symptom and stopped, and only widened to the root cause after a human pushed back. Naming the full fix up front keeps the first slice small without letting it become the whole plan.
+
 ## How to apply
 
 Add to your `CLAUDE.md`:
 
 ```
-Smallest shippable first -- when a task is large, uncertain, or avoided, ship the smallest slice that validates the hypothesis or delivers the highest-impact unit. Never propose a "complete" first version.
+Smallest shippable first -- when a task is large, uncertain, or avoided, ship the smallest slice that validates the hypothesis or delivers the highest-impact unit. Never propose a "complete" first version. Smallest first is an order, not a ceiling: the plan names the root cause and the full fix, then ships the first slice and says what follows.
 ```
 
 Trigger: any task rolled over for 2+ days, described as "big" or "painful," or where the user seems stuck. When the trigger fires, propose the smallest shippable unit explicitly.
