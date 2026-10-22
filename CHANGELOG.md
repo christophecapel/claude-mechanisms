@@ -6,6 +6,17 @@
 
 ---
 
+## v3.5 -- Mechanism #16 clarified: an order, not a ceiling
+
+**Date:** 2026-10-23
+
+### Changed
+
+- **`mechanisms/16-smallest-shippable-first.md`** -- adds "Smallest first is an order, not a ceiling: the plan names the root cause and the full fix, then ships the first slice and says what follows." Read literally, the mechanism was applied to scope rather than order, producing plans that fixed the symptom and stopped. Mirrors the private source of truth (HWW #16).
+- **`README.md`** -- #16 summary row notes "an order, not a ceiling".
+
+---
+
 ## v3.4 -- Catalog sync: mechanism #27
 
 **Date:** 2026-06-07

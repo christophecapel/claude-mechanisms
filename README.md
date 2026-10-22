@@ -63,7 +63,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to propose new mechanisms.
 | 13 | [Dry-run before committing data-patching scripts](mechanisms/13-dry-run-before-data-patching.md) | Test scripts against real data, not just synthetic tests |
 | 14 | [Trace the cascade](mechanisms/14-trace-the-cascade.md) | Walk every downstream consumer before finalizing a pipeline change |
 | 15 | [Build callables, not embedded logic](mechanisms/15-build-callables-not-embedded-logic.md) | One script, multiple callers, same behaviour |
-| 16 | [Smallest shippable first](mechanisms/16-smallest-shippable-first.md) | Ship the smallest slice that validates the hypothesis |
+| 16 | [Smallest shippable first](mechanisms/16-smallest-shippable-first.md) | Ship the smallest slice that validates the hypothesis; an order, not a ceiling |
 | 17 | [Structural checks use hooks, not behavioral rules](mechanisms/17-structural-checks-use-hooks.md) | Enforce objective checks with hooks; reserve rules for judgment calls |
 | 18 | [Safest path first on destructive ops](mechanisms/18-safest-path-first-destructive-ops.md) | Backup, replace, verify, parallel-run, confirm, then destroy |
 | 19 | [Detection rules: more specific patterns, never broader allowlists](mechanisms/19-detection-rules-specific-patterns.md) | When a detector misses, tighten the pattern, never loosen the allowlist |
